@@ -3,6 +3,7 @@
 import { Home, Briefcase, User, Zap, Mail, Download, Contact } from "lucide-react";
 import { FaGithub,FaLinkedin } from "react-icons/fa";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 const NAV_ITEMS = [
   { label: "HOME", icon: Home, href: "/" },
   { label: "WORK", icon: Briefcase, href: "/work" },
@@ -61,7 +62,7 @@ export default function Sidebar({ activeHref = "/" }: SidebarProps) {
         </div>
         <div className="flex gap-3">
           {SOCIALS.map(({ icon: Icon, label, href, external, download }) => (
-            <a
+            <Link
               key={label}
               href={href}
               aria-label={label}
@@ -71,7 +72,7 @@ export default function Sidebar({ activeHref = "/" }: SidebarProps) {
               className="flex h-11 w-11 items-center justify-center rounded-full border border-[#232323] text-[#8a8a85] transition-colors hover:border-[#c7f547] hover:text-[#c7f547]"
             >
               <Icon size={20} />
-            </a>
+            </Link>
           ))}
         </div>
       </div>
