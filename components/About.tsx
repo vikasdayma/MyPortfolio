@@ -143,20 +143,16 @@ export default function About() {
           </motion.p>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.94 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
-        >
+      
           <Image
             src="/1.png"
             width={700}
             height={700}
             alt="about"
-            className="h-auto w-1/2"
+            className="h-auto w-[90%] xl:w-1/2"
           />
         </motion.div>
-      </motion.div>
+     
 
       {/* Quick Facts */}
       <motion.div

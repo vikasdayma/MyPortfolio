@@ -87,7 +87,7 @@ const word = {
 
 export default function Hero() {
   return (
-    <main className="relative flex flex-1 flex-col items-center overflow-hidden xl:flex-row">
+    <main id="hero" className="relative flex flex-1 flex-col items-center overflow-hidden xl:flex-row">
       {/* background grid */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.08]"

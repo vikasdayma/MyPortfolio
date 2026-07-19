@@ -74,6 +74,7 @@ import Hero from "@/components/Hero";
 import { useEffect, useState } from "react";
 import { Terminal } from "@/src/some/Terminal";
 import { BootStageProvider } from "@/src/some/BootStageProvider";
+import Home from "@/components/Home";
 
 export default function HomePage() {
 
@@ -82,7 +83,7 @@ export default function HomePage() {
 
      
        
-      <Hero />
+      <Home />
   
    
 
